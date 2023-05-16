@@ -2,6 +2,7 @@ import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast, format } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { NavLink } from "react-router-dom"
+import { DefaultUi, Player } from '@vime/react';
 
 
 interface LessonProps {
@@ -33,7 +34,7 @@ export function Lesson(props: LessonProps) {
                         {props.type === 'live' ? 'Importante!' : 'Novidade!'}
                     </span>
                 </div>
-
+               
                 <strong className="text-blue-900 mt-5 block">
                     {props.title}
                 </strong>

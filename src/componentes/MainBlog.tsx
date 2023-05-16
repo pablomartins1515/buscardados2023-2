@@ -3,6 +3,7 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 import Pesquisador from "./Pesquisador";
 import { NavLink } from "react-router-dom";
+import { BottomStyle } from "./BottomStyle";
 
 interface VideoProps {
   lessonSlug: string;
@@ -44,7 +45,7 @@ export function MainBlog(props: VideoProps) {
                 </strong>
               </div>
               <div className="text-lg mb-10">
-                {data.lesson.blogtext2} 
+                {data.lesson.blogtext2}
               </div>
             </div>
             <div className="flex items-center pl-8 pr-8">
@@ -86,7 +87,7 @@ export function MainBlog(props: VideoProps) {
               <span className="text-lg mb-6">
                 {data.lesson.blogtext5}
               </span>
-              
+
             </div>
 
             <div className="bg-black flex justify-center mt-8">
@@ -97,11 +98,13 @@ export function MainBlog(props: VideoProps) {
                 </Player>
               </div>
             </div>
+
             <div>
               <div className="text-xl mt-8 mb-12 text-gray-500 leading-relaxed">
                 <span>{data.lesson.description}</span>
               </div>
-            </div>            
+            </div>
+
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
                 <img
@@ -120,45 +123,12 @@ export function MainBlog(props: VideoProps) {
               </div>
             )}
 
-            <div className="gap-8 mt-20 grid grid-cols-2">
-              <NavLink
-                to="/blogpage"
-                className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-500 transition-colors"
-              >
-                <div className="bg-blue-900 h-full p-6 flex items-center">
-                  <CaretLeft size={40} className="text-gray-50" />
-                </div>
-                <div className="p-6 leading-relaxed">
-                  <p><strong className="">Postagem anterior!</strong></p>
-                  <p className="text-base text-gray-200 mt-2">
-                    <strong>Clique aqui e veja uma postagem anterior!</strong>
-                  </p>
-                </div>
-                <div className="h-full p-6 flex items-center">
-                  <CaretDoubleLeft size={24} />
-                </div>
-              </NavLink>
-              <NavLink
-                to="/blogpage"
-                className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-500 transition-colors"
-              >
-                <div className="h-full p-6 flex items-center">
-                  <CaretDoubleRight size={24} />
-                </div>
-                <div className="p-6 leading-relaxed">
-                  <p><strong className="">Próxima postagem!</strong></p>
-                  <p className="text-base text-gray-200 mt-2">
-                    <strong>Clique aqui e fique por dentro das últimas notícias!</strong>
-                  </p>
-                </div>
-                <div className="bg-blue-900 h-full p-6 flex items-center">
-                  <CaretRight size={40} className="text-gray-50" />
-                </div>
-              </NavLink>
-            </div>
+            <BottomStyle />
+
           </div>
         </div>
       </div>
+
     </div>
   );
 }
