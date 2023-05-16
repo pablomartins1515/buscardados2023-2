@@ -9,9 +9,9 @@ export function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/maisconsultas/" element={<MaisConsultas />} />
-            <Route path="/blogpage/" element={<BlogPage />} />
-            <Route path="/politica/" element={<Politica />} />
+            <Route path="/maisconsultas" element={<MaisConsultas />} />
+            <Route path="/blogpage" element={<BlogPage />} />
+            <Route path="/politica" element={<Politica />} />
             <Route path="/blogpage/post/:slug" element={<Post />} />   
         </Routes>
     )
