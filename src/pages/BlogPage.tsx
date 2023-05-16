@@ -5,8 +5,9 @@ export function BlogPage () {
     return (
         <div>
             <Header />
-            <h1>Botões Grandes do Blog</h1>
-            <Sidebar />
+            <div className="flex flex-1 justify-center">
+                <Sidebar />
+            </div>            
         </div>       
     )        
 }

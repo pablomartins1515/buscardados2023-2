@@ -8,10 +8,10 @@ query GetLessonBySlug($slug: String) {
       avatarURL
       name
     }
-    blogtext 
-    blogtext2 
-   	blogtext3
-    blogtext4 
+    blogtext
+    blogtext2
+    blogtext3
+    blogtext4
     blogtext5
     subtext2
     subtext3

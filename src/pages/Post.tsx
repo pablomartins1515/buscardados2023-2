@@ -18,7 +18,7 @@ export function Post () {
                      : <div className="flex-1  text-2xl text-zinc-200 text-opacity-30   hover:mix-blend-hard-light font-bold flex 
                      gap-2 items-center justify-center " >Clique em uma aula <ArrowRight size={32}/></div>  }               
                 
-                </main>
+            </main>
 
             <Rodape />                       
         </div>   

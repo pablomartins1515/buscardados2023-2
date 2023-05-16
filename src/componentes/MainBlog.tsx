@@ -9,6 +9,7 @@ interface VideoProps {
 }
 
 export function MainBlog(props: VideoProps) {
+
   const { data } = useGetLessonBySlugQuery({
     variables: {
       slug: props.lessonSlug
@@ -85,7 +86,9 @@ export function MainBlog(props: VideoProps) {
               <span className="text-lg mb-6">
                 {data.lesson.blogtext5}
               </span>
+              
             </div>
+
             <div className="bg-black flex justify-center mt-8">
               <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                 <Player>
@@ -119,7 +122,7 @@ export function MainBlog(props: VideoProps) {
 
             <div className="gap-8 mt-20 grid grid-cols-2">
               <NavLink
-                to=""
+                to="/blogpage"
                 className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-500 transition-colors"
               >
                 <div className="bg-blue-900 h-full p-6 flex items-center">
@@ -136,7 +139,7 @@ export function MainBlog(props: VideoProps) {
                 </div>
               </NavLink>
               <NavLink
-                to=""
+                to="/blogpage"
                 className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-500 transition-colors"
               >
                 <div className="h-full p-6 flex items-center">
