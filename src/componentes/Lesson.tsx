@@ -23,9 +23,13 @@ export function Lesson(props: LessonProps) {
                 {availableDateFormatted}
             </span>
 
-            <div className="rounde border border-gray-100 p-4 mt-2 group-hover:border-green-500">
-                <div className='flex justify-end '>
-                    <span className=" text-xs rounded py-[0.125rem] px-2 text-gray-600 border border-green-300 font-bold ">
+            <div className="rounded-sm border border-gray-100 p-4 mt-2 group-hover:border-green-800 group-hover:border-x-4  ">
+                
+                <div className=' justify-center items-center gap-4'>
+                    <span className=' text-gray-50 pr-40' >
+                        xxxxxxxxxxii
+                    </span>
+                    <span className=" text-xs rounded py-[0.125rem] px-2 text-gray-600 border border-green-800 font-bold ">
                         {props.type === 'live' ? 'Importante!' : 'Novidade!'}
                     </span>
                 </div>

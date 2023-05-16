@@ -16,6 +16,7 @@ module.exports = {
           500: '#00875F',
           700: '#015F43',
           800: '#4DC247', //cor do instagram
+          
         },
         blue: {
           500: '#81D8F7',
