@@ -27,7 +27,7 @@ export function MainBlog(props: VideoProps) {
 
   return (
     <div className="flex-1">
-      <div className="p-12 pt-12 pr-8 mt-3 max-w-[1020px] mx-auto">
+      <div className="pt-12 pr-8 mt-3 max-w-[1020px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1 ml-8">
             <h1 className="text-5xl font-bold mb-5 text-blue-900 leading-tight">
